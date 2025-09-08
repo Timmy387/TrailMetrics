@@ -1,0 +1,15 @@
+Text_import_files/
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+build/
+dist/
+*.spec
+*.log
+*.db
+*.json
+.idea/
+main.py
+*.sh

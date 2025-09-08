@@ -88,26 +88,6 @@ class GUIMain(ctk.CTk):
     def get_conn(self):
         return self.conn
 
-
-    def refresh_scheme(self):
-        for widget in self.winfo_children():
-            if isinstance(widget, ctk.CTkFrame):
-                for child in widget.winfo_children():
-                    # if isinstance(child, ctk.CTkLabel):
-                    #     child.configure(fg_color=self.settings.colorScheme)
-                    if isinstance(child, ctk.CTkButton):
-                        child.configure(fg_color=self.settings.color_scheme())
-                        child.configure(bg_color=self.settings.color_scheme())
-                    elif isinstance(child, ctk.CTkOptionMenu):
-                        child.configure(fg_color=self.settings.color_scheme())
-                    elif isinstance(child, ctk.CTkEntry):
-                        child.configure(fg_color=self.settings.color_scheme())
-            # elif isinstance(widget, ctk.CTkButton):
-            #     widget.configure(fg_color=self.settings.color_scheme())
-            elif isinstance(widget, ctk.CTkButton):
-                widget.configure(fg_color=self.settings.color_scheme())
-                widget.configure(bg_color=self.settings.color_scheme())
-
     def current_x(self):
         return int(self.winfo_x() // self.settings.scale_factor())
 

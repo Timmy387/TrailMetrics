@@ -109,7 +109,6 @@ class Settings:
         return self.config["defaults"]
 
 
-
 def build_config(screenWidth, screenHeight):
     # CONFIG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.json")
     sf = ctypes.windll.shcore.GetScaleFactorForDevice(0) / 100

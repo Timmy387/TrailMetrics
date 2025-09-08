@@ -1,5 +1,5 @@
 from sqlite3 import Connection
-from tabulate import tabulate
+# from tabulate import tabulate
 
 def list_trails(conn: Connection):
     """
